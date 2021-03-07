@@ -1,0 +1,20 @@
+{
+  "name": "frontend-templates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://cyrilint.github.io/",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cyril",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  }
+}

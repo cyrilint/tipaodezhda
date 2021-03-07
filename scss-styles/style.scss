@@ -1,0 +1,268 @@
+@import "./modules/vars";
+@import "./modules/reset.scss";
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header-line {
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+
+    &-left {
+        padding: 10px 0;
+    }
+    &-right {
+        display: flex;
+    }
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-element {
+        padding: 10px 15px;
+        img {
+            vertical-align: middle;
+        }
+        &:hover {
+            border-left: 1px solid #666666;
+            border-right: 1px solid #666666;
+            cursor: pointer;
+        }
+    }
+}
+
+.navigation {
+    padding: 20px 0;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-right {
+        display: flex;
+    }
+    &-left {
+        margin: auto 0;
+    }
+}
+
+nav {
+    font-weight: 300;
+    font-size: 17px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin: auto 0;
+    img {
+        vertical-align: middle;
+    }
+    a {
+        margin-right: 30px;
+    }
+}
+
+
+.cart {
+    width: 215px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    &-main, &-details {
+        padding: 10px;
+    }
+    &-main {
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.slider {
+    &-image {
+        height: 65%;
+        position: relative;
+        background-image: url('./images/slider.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+        
+    &-button {
+        position: absolute;
+        bottom: 70px;
+        left: 355px;
+    }
+
+    &-circles {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+        i {
+            margin: 0 20px;
+            color: #867a76;
+            &.active {
+                color:$orange;
+            }
+        }
+    }
+}
+
+.socials {
+    font-size: 22px;
+    font-family: monospace;
+    font-weight: 700;
+    background-color: #ededed;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &-email-form {
+        margin: auto 0;
+    }
+        
+    &-icons {
+        display: flex;
+        span {
+        margin: auto 10px auto 0;
+        }
+    }
+
+    i {
+        padding: 15px;
+        color: #6d6d6d;
+        &:hover {
+            background-color: #f7f7f7;
+            cursor: pointer;
+        }
+    }
+}
+
+.presentation {
+    margin: 42px 0 52px;
+
+    &-inner, &-bottom {
+        display: flex;
+        img {
+            display: block;
+        }
+    }
+}
+
+.items {
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-navigation {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            padding: 20px;
+            cursor: pointer;
+            &.active {
+                background-color: $orange;
+                color: #fff;
+                cursor:auto;
+            }
+        }
+    }
+}
+
+.arrows {
+    i {
+        color: #ccc;
+        padding: 7px 25px;
+        &:hover {
+            background-color: $orange;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+.item {
+    margin-right: 28px;
+    background-color: #fff;
+
+    &-details {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .price {
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.trending-list {
+    background-color: $orange;
+    padding: 30px 0;
+    flex-wrap: nowrap;
+}
+
+button {
+    margin: 15px 0;
+    background-color: $orange;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+
+    i {
+        margin-left: 13px;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.clearance-picture {
+    background-image: url(./images/clearance.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 157px;
+    margin: 25px 0;
+}
+
+input {
+    padding: 5px;
+}
+.media {
+    display: none;
+}
+
+
+/* MEDIA */
+@media screen and (max-width:1227px) {
+    header, section {
+        display: none;
+    }
+    .media {
+        display: block;
+        font-size: 200px;
+    }
+}
+/**/
